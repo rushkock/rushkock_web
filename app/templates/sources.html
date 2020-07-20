@@ -1,0 +1,222 @@
+<!--
+Ruchella Kock
+12460796
+Description: This is the page provides information about datasets
+sources:
+bootstrap navbar -- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+bootstrap cards -- https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_card_image&stacked=h
+chart image -- https://icons8.com/icons/set/favicon
+WHO logo -- https://www.who.int/
+UVA logo -- http://www.uva.nl/en/home
+SAMHSA logo -- https://www.aaap.org/samhsa-announces-new-online-course-anger-management/
+flower picture -- Ruchella kock
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Suicide rate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../static/css/suicides/home.css">
+    <link rel="stylesheet" href="../static/css/suicides/sources.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+  </head>
+
+  <body>
+    <!-- Bootstrap Nav-bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">Suicide Rate</a>
+      <!-- links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/home_suicides">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/home_suicides#cards">Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/suicides">Visualizations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/us">US mental Health</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Info</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Flower image and quote -->
+    <div>
+      <img class="flower2" src="../static/images/flower2.jpg" alt="Flowers">
+      <h1 class="quote"> “People rarely bring flowers to a suicide.” </h1>
+      <p class="author"> -Jennifer Niven </p>
+    </div>
+
+    <div>
+      <div class="card11">
+        <div class="row no-gutters">
+          <div class="col-auto">
+            <img src="../static/images/barchart.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+            <div class="card-block px-2" id="button">
+              <h4 class="card-title">Data Source</h4>
+              <p class="card-text">The data was collected from kaggle. However,
+                 it has been collected and published by the World Health
+                 Organization(WHO). It provides information for countries all
+                 over the world. For each country it gives data for the years
+                 1979-2016 (some years are missing for some countries).
+                 The data consists of the number of suicides and the population
+                 size for different age groups. The smallest age group is 5 - 14
+                 and the biggest one is 75+. It also provides information
+                 about gender. It is a large dataset consisting of 43776 entries.
+                 Preprocessing of the data included removing empty columns and
+                 removing information about a year if the number of suicide
+                 for all the age groups are 0.
+              </p>
+              <a href="https://www.kaggle.com/szamil/who-suicide-statistics"
+                 class="btn btn-primary">Link to data</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card12">
+        <div class="row no-gutters">
+          <div class="col">
+            <div class="card-block px-2" id="button">
+              <h4 class="card-title"> World Health Organization</h4>
+              <p class="card-text">
+              The world health organization(WHO) is an organization existing
+              for over 70 years. Its purpose is directing and coordinating
+              international health within the United Nations. They work in many
+              areas such as: promoting health through the course of life, acting
+              during natural and manmade emergencies, providing leadership to
+              participating countries on matters related to health.
+              The WHO also collects data from all over the world and provides
+              awareness for many heaalth issues.
+              </p>
+              <a href="https://www.who.int/" class="btn btn-primary">Link to website</a>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <img src="../static/images/WHO.jpg" class="logo" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="card13">
+        <div class="row no-gutters">
+          <div class="col-auto">
+            <img src="https://img.icons8.com/color/300/000000/workflow.png"
+                 class="img-fluid" alt="">
+          </div>
+
+          <div class="col">
+            <div class="card-block px-2" id="button">
+            <h4 class="card-title">US Data</h4>
+            <p class="card-text">Both data sets were collected from data-world.
+              However, it has been collected and published by SAMHSA.
+              The data shows information for each state of the United States of
+              America. It provides a percentage of people who has had suicidal
+              thoughts and the percentage of people who has suffered from a
+              major depressive disorder as classified by the DSM-IV.
+              It also gives the Confidence Interval. To understand a confidence
+              interval it is important to understand sampling. During research
+              the whole population cannot be used in the dataset thus the
+              researchers choose a sample of the population. They hope that this
+              sample contains the true mean of the population. They can calculate
+              the confidence interval to validate their hopes. This dataset uses
+              two-sided confidence intervals. The chosen confidence coefficient
+              is 95%. Thus, we expect 95% of the population sample to fall in
+              between the upper and lower interval.
+            </p>
+            <a href="https://data.world/samhsa" class="btn btn-primary">Link to data</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card14">
+        <div class="row no-gutters">
+          <div class="col">
+            <div class="card-block px-2" id="button">
+              <h4 class="card-title"> SAMHSA</h4>
+              <p class="card-text"> SAMHSA stands for Substance Abuse and Mental
+                Health Services Administration. It is part of the U.S. Department
+                of Health and Human Services. SAMHSA attempts to improve treatment
+                of mental illness and substance abuse. It attempts to do this
+                not only to help patients but also society by reducing the burden
+                and consequences that mental illness and substance abuse brings.
+              </p>
+              <a href="https://www.samhsa.gov/" class="btn btn-primary">Link to website</a>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <img src="../static/images/samhsa_logo.jpg" class="logo" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+      <div class="footerLine"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <br> <h5> About me </h5> <br>
+          </div>
+          <div class="col">
+          <br> <h5> Useful links </h5> <br>
+          </div>
+          <div class="col">
+          <br> <h5> Contact </h5> <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            My name is Ruchella Kock. About 2 years ago I moved to the Netherlands
+            to study psychology at Leiden University. Fast forward to now,
+            I am a 3th year psychology student doing a minor in programming at
+            the University of Amsterdam. This website is a combination of both
+            of my passions, psychology and data.
+          </div>
+          <div class="col">
+            <p> <a href="http://www.uva.nl/home">University of Amsterdam</a> </p>
+            <p> <a href="https://www.113.nl/english">Suicide prevention</a> </p>
+            <p> <a href="https://github.com/rushkock/project">My Github</a> </p>
+            <p> <a href="https://www.youtube.com/watch?v=PUVdg6iTivY&feature=youtu.be">Help</a> </p>
+          </div>
+          <div class="col">
+            <p> <img src="https://img.icons8.com/ultraviolet/30/000000/worldwide-location.png">
+                Science Park 904 1098 XH Amsterdam</p>
+            <p> <img src="https://img.icons8.com/ultraviolet/30/000000/secured-letter.png">
+                ruchella_kock@hotmail.com</p>
+            <p> <img src="https://img.icons8.com/ultraviolet/30/000000/touchscreen-smartphone.png">
+              + 297 747 0612</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center py-3">University of Amsterdam
+        <img class="uva" src="../static/images/uva.jpg" alt="University of amsterdam Logo">
+        <a href="http://www.mprog.nl/">Minor programmeren</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="card-deck">
+<div class="row">
+  <div class="card">
+    <img class="card-img-top" src="../static/images/suicides.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Suicides Dashboard</h5>
+      <p class="card-text">Information visualization project with d3.js animations.</p>
+      <p class="card-text"><small class="text-muted">February to March 2020</small></p>
+      <a class='btn btn-primary' href="/suicides" target='_blank'>See dashboard</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="../static/images/dashboard.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Terrorism Dashboard</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted">December 2019 to March 2020</small></p>
+      <a class='btn btn-primary' href="/terrorism" target='_blank'>See dashboard</a>
+    </div>
+  </div>
+</div>
+</div>
+
+  {% endblock %}

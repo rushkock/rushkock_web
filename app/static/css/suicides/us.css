@@ -1,0 +1,83 @@
+/*
+Ruchella Kock
+12460796
+Description: This file contain CSS for the US mental health page of the website
+(linked to us.html)
+source: https://bl.ocks.org/mbostock/4090848
+source: https://github.com/rushkock/dataprocessing/blob/master/homework/week_6/usmap.css
+*/
+
+/*  ////////////////////////////////////////////////////////////////////////
+//////////////////////////////// US MAP  //////////////////////////////////
+///////////////////////////////////////////////////////////////////////  */
+
+.USmap {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 1000px;
+  height: 700px;
+}
+
+.USmap2 {
+  position: relative;
+  top: 0px;
+  left: 600px;
+  width: 1000px;
+  height: 700px;
+}
+
+/* add borders between states */
+.state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+/* Set position of tooltip and width of the "box" */
+.usTooltip {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  pointer-events: none;
+  background-color: #bae4bc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*  ////////////////////////////////////////////////////////////////////////
+///////////////////////////  INFO BOX //////////////////////////////////////
+///////////////////////////////////////////////////////////////////////  */
+
+.boxMap {
+  position: absolute;
+  top: 60px;
+  left: 1000px;
+}
+
+.boxMap2 {
+  position: absolute;
+  top: 700px;
+  left: 10px;
+  width: 500px;
+  text-align: center;
+  font-family: Georgia;
+}
+
+.subBoxMap, .subBoxMap2 {
+  position: absolute;
+  top: 370px;
+  left: 80px;
+  width: 300px;
+  height: 150px;
+  border: solid black 0.5px;
+  font-family: Georgia;
+  line-height: normal;
+}
+
+.subBoxMap2 div {
+  visibility: hidden;
+}

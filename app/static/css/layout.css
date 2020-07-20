@@ -1,0 +1,194 @@
+main{
+  background-color: white;
+  text-align: center;
+}
+
+
+.card-deck .card {
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.sidenav2 .sidenav{
+  margin-top: 20%;
+}
+
+.sidenav{
+  background: rgb(255,230,0);
+  background: linear-gradient(0deg, rgba(252,219,88,1) 0%, rgba(255,173,1) 100%);
+  opacity:0.9;
+}
+
+
+.title-skills{
+  text-align: middle;
+  position: relative;
+  top: 30%;
+}
+.hero-image {
+  /* background-image: url('../images/aruba_outline.svg'); */
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/aruba.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.keywords{
+  border-radius: 25px;
+  border: 2px solid #add8e6;
+  padding: 5px;
+  text-align: center;
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+.keywords:hover{
+   background: #add8e6;
+   color: white;
+}
+.sidenav .sidenav2 a {
+  text-align: left;
+  font-size: 22px;
+  color: black;
+  display: block;
+}
+
+.sidenav .sidenav2 a:hover {
+  color: #f1f1f1;
+}
+
+.picture_me{
+  border-radius: 50%;
+  width:90%;
+  opacity:1;
+  z-index: 10;
+}
+
+.col-10 {
+  padding: 0px;
+}
+
+hr {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+#sidebar.active {
+    min-width: 155px;
+    max-width: 155px;
+    text-align: center;
+}
+
+/* Toggling the sidebar header content, hide the big heading [h3] and showing the small heading [strong] and vice versa*/
+#sidebar .sidebar-header strong {
+    display: none;
+}
+#sidebar.active .sidebar-header h3 {
+    display: none;
+}
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Same dropdown links padding*/
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+/* Changing the arrow position to bottom center position,
+   translateX(50%) works with right: 50%
+   to accurately  center the arrow */
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+@media (max-width: 768px) {
+    /* 80px and its content aligned to centre. Pushing it off the screen with the
+       negative left margin
+    */
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+
+
+    /* Reappearing the sidebar on toggle button click */
+    #sidebar {
+        margin-left: 0;
+    }
+
+
+    /* Toggling the sidebar header content,
+       hide the big heading [h3] and showing the small heading [strong] and vice versa
+    */
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+
+    /* Downsize the navigation links font size */
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        font-size: 15px;
+    }
+
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    /* Adjust the dropdown links padding*/
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+
+    /* Changing the arrow position to bottom center position,
+      translateX(50%) works with right: 50%
+      to accurately  center the arrow */
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}

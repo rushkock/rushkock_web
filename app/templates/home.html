@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<!-- JS script for charts -->
+<script src="../static/js/home_main.js"></script>
+<script src="../static/js/animated_donut_chart.js"></script>
+
+<section>
+  <img src="../static/images/ruchella_logo.svg" />
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="hero-image row justify-content-center min-vh-100">
+      <div class="col-12 title-skills">
+        <h1>Highlighted Skills</h1>
+        <p>Hi! My name is Ruchella and welcome to my online portfolio</p>
+      </div>
+      <div class="col-2">
+        <div class=" skills python">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="skills javascript">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="skills matlab">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="skills R">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="skills SQL">
+        </div>
+      </div>
+      <!--
+      <img src="../static/images/aruba_outline.svg" class="img-fluid" alt="Outline island" style="height: auto; width: 100%; display: block;">
+    -->
+  </div>
+</div>
+</section>
+<br></br><br>
+<h4>This website is a collection of my favorite projects. <br>
+  Main topics include data visualization, statistics and machine learning <br>
+</h4>
+<br></br><br>
+<hr>
+<section>
+
+</section>
+
+<section>
+  <div class="card-deck">
+    <div class="row">
+      <div class="col-12">
+        <h1> Data visualizations </h1>
+        <br></br>
+        <p>I have created an array of dashboards visualizing data. I like data viz blahblahblah </p>
+        <div class="row justify-content-center">
+          <p class="col-1 keywords">D3</p>
+          <p class="col-1 keywords">Bootstrap</p>
+          <p class="col-1 keywords">Javascript</p>
+        </div>
+      </div>
+      <div class="card col-6">
+        <img class="card-img-top" src="../static/images/animation_4.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">D3 animations</h5>
+          <p class="card-text">Information visualization project with d3.js animations.</p>
+          <p class="card-text"><small class="text-muted">February to March 2020</small></p>
+          <a class='btn btn-primary' href="/animation" target='_blank'>See more</a>
+        </div>
+      </div>
+      <div class="card col-6">
+        <img class="card-img-top" src="../static/images/dashboard.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Dashboards</h5>
+          <p class="card-text">Information visualization project made in D3.js.</p>
+          <p class="card-text"><small class="text-muted">January to February 2019</small></p>
+          <a class='btn btn-primary' href="/dashboards">See more</a>
+        </div>
+      </div>
+    </div>
+    <hr><br></br><br>
+    <div class="row">
+      <div class="col-12">
+        <h1> Statisics and Machine Learning </h1>
+        <br></br>
+        <p>Computer vision, stats blah blah </p>
+        <div class="row justify-content-center">
+          <p class="col-1 keywords">Sklearn</p>
+          <p class="col-1 keywords">Python</p>
+          <p class="col-2 keywords">Computer Vision</p>
+          <p class="col-1 keywords">Statistics</p>
+        </div>
+      </div>
+        <div class="card col-5">
+          <img class="card-img-top" src="../static/images/accuracy_by_model.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Image classification</h5>
+            <p class="card-text">This is a computer vision project, classifying food images with keras.</p>
+            <p class="card-text"><small class="text-muted">November to December 2019</small></p>
+            <a class='btn btn-primary' href="/computer_vision">See more</a>
+          </div>
+        </div>
+        <div class="card col-5">
+          <img class="card-img-top" src="../static/images/thesis_std.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">T-test versus Permutation test</h5>
+            <p class="card-text">As my Bachelors Thesis, I performed a simulation study in R,
+              comparing Welch's t-test to the Permutation test in terms of the assumption of Homogeneity.
+              The Data analysis was performed in python.</p>
+              <p class="card-text"><small class="text-muted">February to June 2019</small></p>
+              <a class='btn btn-primary' href="/thesis">See more</a>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1> Front and Back end development </h1>
+          <br></br>
+          <p> Agestudy blah blah </p>
+          <div class="row justify-content-center">
+            <p class="col-1 keywords">Python</p>
+            <p class="col-1 keywords">Postgressql</p>
+            <p class="col-1 keywords">Data viz</p>
+          </div>
+        </div>
+        <div class="card col-6">
+          <img class="card-img-top" src="../static/images/agestudy.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Agestudy website</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted">December 2019 to March 2020</small></p>
+            <a class='btn btn-primary' href="https://www.agestudy.nl" target='_blank'>See more</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section>
+  </section>
+  {% endblock %}

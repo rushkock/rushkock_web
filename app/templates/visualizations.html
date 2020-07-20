@@ -1,0 +1,159 @@
+<!-- Ruchella Kock
+12460796
+Description: This page shows the visualizations (map, barchart and sunburst)
+bootstrap navbar -- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+UVA logo -- http://www.uva.nl/en/home
+Bootstrap dropdown -- https://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Suicide rate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="../static/css/suicides/home.css">
+        <link rel="stylesheet" href="../static/css/suicides/sources.css">
+        <link rel="stylesheet" href="../static/css/suicides/visualizations.css">
+
+        <!-- D3 links -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="../static/js/suicides/topojson.js"></script>
+
+        <!-- JS script for charts -->
+        <script src="../static/js/suicides/main.js"></script>
+        <script src="../static/js/suicides/sunburst.js"></script>
+        <script src="../static/js/suicides/barchart.js"></script>
+        <script src="../static/js/suicides/map.js"></script>
+
+
+        <!-- slider -->
+        <script src="https://unpkg.com/d3-simple-slider"></script>
+        <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous"
+        />
+    </head>
+    <body>
+      <!-- Bootstrap Nav-bar -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Suicide Rate</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/home_suicides">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/home_suicides#cards">Story</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Visualizations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/us">US mental Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sources">Info</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Filter by age</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="age" value="all" href="#">All ages</a>
+              <a class="dropdown-item" id="age" value="5-14 years" href="#">5-14 years</a>
+              <a class="dropdown-item" id="age" value="15-24 years" href="#">15-24 years</a>
+              <a class="dropdown-item" id="age" value="25-34 years" href="#">25-34 years</a>
+              <a class="dropdown-item" id="age" value="35-54 years" href="#">35-54 years</a>
+              <a class="dropdown-item" id="age" value="55-74 years" href="#">55-74 years</a>
+              <a class="dropdown-item" id="age" value="75+ years" href="#">75+ years</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Filter by gender</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="gender" value="all" href="#">All</a>
+              <a class="dropdown-item" id="gender" value="female" href="#">Female</a>
+              <a class="dropdown-item" id="gender" value="male" href="#">Male</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Filter sunburst</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="sunburstDropdown" value="allCountries" href="#sunburst">All</a>
+              <a class="dropdown-item" id="sunburstDropdown" value="50" href="#sunburst">top 50</a>
+              <a class="dropdown-item" id="sunburstDropdown" value="25" href="#sunburst">top 25</a>
+              <a class="dropdown-item" id="sunburstDropdown" value="10" href="#sunburst">top 10</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- div for the SVGs -->
+      <div class="barChart"></div>
+      <div class="worldMap">
+        <div class="row align-items-center" id="slider">
+          <div class="col-sm-2"><p id="value-time"></p></div>
+          <div class="col-sm"><div id="slider-time"></div></div>
+        </div>
+      </div>
+      <div class="sunburst" id="sunburst">
+        <h5>Suicides per 10000 inhabitants</h5>
+      </div>
+
+      <!-- Add a box next to the map -->
+      <div class="boxMap">
+        <h1> Number of suicides <br> in the world </h1>
+        <p> The world map shows the number of suicides per 10000 inhabitants. <br>
+          The darker the country, the higher the number of suicides.
+          When hovering over a land all the numbers can be seen in the box here under.
+          The map can also be filtered with the dropdowns above. It can be filtered
+          based on age group or gender. </p>
+        <div class="countryStatistics">
+          <div class="label">Chosen filter: </div>
+          <div class="filter val">all</div>
+          <br>
+          <div class="label">Sunburst filter: </div>
+          <div class="sunburstFilter val">Top 10</div>
+        </div>
+        <div class="subBoxMap">
+          <div class="subBoxMapCountry">
+            <h1></h1>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Suicides per 10000: </div>
+            <div class="subBoxMapSuicidesPer10000 val"></div>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Percentage of suicides: </div>
+            <div class="subBoxMapSuicidesPercentage val"></div>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Suicides: </div>
+            <div class="subBoxMapSuicides val"></div>
+          </div>
+          <br>
+          <div class="countryStatistics">
+            <div class="label"> Total population: </div>
+            <div class="subBoxMapPopulation val"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer font-small unique-color-dark">
+          <div class="footer-copyright text-center py-3">University of Amsterdam
+            <img class="uva" src="../static/images/uva.jpg" alt="University of amsterdam Logo">
+            <a href="http://www.mprog.nl/">Minor programmeren</a>
+          </div>
+      </footer>
+    </body>
+</html>

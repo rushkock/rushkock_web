@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- https://icons8.com/icons/set/favicon -->
+  <link rel="shortcut icon" type="image/png" href="../static/images/favicon.png"/>
+  <link href="../static/css/layout.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+  <!-- <script src="/static/js/register.js"></script>-->
+
+  <title>{% block title %}{% endblock %}</title>
+
+
+</head>
+
+<body>
+  <!-- Fill main with different html files -->
+  <main>
+    <div class="row">
+      <!--
+      <div class="col-2 sidenav">
+      <div class="sidenav2 h-100 w-100">
+      <img class="picture_me" src="../static/images/picture_me.jfif" alt="Picture of me">
+      <br></br><br>
+      <a class="nav-link" href="/"><i style="margin-right: 0.8em;" class="fas fa-home"></i>Home</a>
+      <hr>
+      <a class="nav-link" href="/about"><i style="margin-right: 0.8em;" class="fas fa-user"></i>About</a>
+      <hr>
+      <a class="nav-link" href="/CV"><i style="margin-right: 0.8em;" class="fas fa-briefcase"></i>CV</a>
+      <hr>
+      <a class="nav-link" href="/experience"><i style="margin-right: 0.8em;" class="fas fa-code"></i>Experience</a>
+      <hr>
+      <a class="nav-link" href="/contact"><i style="margin-right: 0.8em;" class="fas fa-inbox"></i>Contact</a>
+      <hr>
+    </div>
+  </div>
+-->
+
+
+<div id="sidebar"class="col-2 wrapper sidenav ">
+  <!-- Sidebar  -->
+    <div class="sidenav2 h-100 w-100">
+        <img class="picture_me" src="../static/images/picture_me.jfif" alt="Picture of me">
+        <br></br><br>
+        <a class="nav-link" href="/"><i style="margin-right: 0.8em;" class="fas fa-home"></i>Home</a>
+        <hr>
+        <a class="nav-link" href="/about"><i style="margin-right: 0.8em;" class="fas fa-user"></i>About</a>
+        <hr>
+        <a class="nav-link" href="/CV"><i style="margin-right: 0.8em;" class="fas fa-briefcase"></i>CV</a>
+        <hr>
+        <a class="nav-link" href="/experience"><i style="margin-right: 0.8em;" class="fas fa-code"></i>Experience</a>
+        <hr>
+        <a class="nav-link" href="/contact"><i style="margin-right: 0.8em;" class="fas fa-inbox"></i>Contact</a>
+        <hr>
+</div>
+<!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                </button>
+        </nav>
+    </div>
+</div>
+<div class="col-10">  {% block main %}{% endblock %}</div>
+</div>
+</main>
+
+</body>
+<script>
+$(document).ready(function () {
+
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+  });
+
+})
+</script>
+</html>

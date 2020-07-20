@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Thesis
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <h1>Violation of Homogeneity of Variances: A Comparison Between Welch’s t-Test and the Permutation Test</h1>
+  <h3>Abstract</h3>
+  <p>
+A substantial amount of psychological research use statistical tests to compare means. A widely used method to do this is the parametric t-test. However, the t-test has many assumptions, whereas nonparametric tests such as the permutation test have fewer assumptions. Despite this, nonparametric tests are not widely used in psychological research. Nonetheless, studies have compared the t-test and permutation test against each other. Studies that compared the tests were not focused on comparing the tests when there is variance heterogeneity, large sample sizes, and unequal group sizes.
+
+
+In this study, a simulation study was performed to compare the permutation test and Welch’s t-test in terms of the homogeneity assumption. This study used a range of sample sizes representative of psychological research along with varying group ratios. When there is variance homogeneity, the tests perform equally well. When there is variance heterogeneity and equal sample sizes, the tests performed equally well for the large sample sizes. However, when there is variance heterogeneity and unequal sample sizes, the type I error of the permutation test was much higher or much lower than α =0.05. This is due to the violation of the permutation test’s assumption of exchangeability. Welch’s t-test is not aﬀected by variance heterogeneity. Thus, Welch’s t-test should be preferred if there is variance heterogeneity and its other assumptions are met. The permutation test is preferred if there is variance homogeneity or if the assumptions of Welch’s t-test are not met and there variance heterogeneity but equal sample sizes.</p>
+<br><br>
+<iframe src="../static/file/1815458_ruchella_kock_thesis.pdf" width="100%" height="500px">
+   </iframe>
+<br><br>
+<a href="https://github.com/rushkock/sim_study_thesis"><i class="fa fa-github" style="font-size:48px;color:black"></i></a>
+{% endblock %}

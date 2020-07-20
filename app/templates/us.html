@@ -1,0 +1,136 @@
+<!--
+Ruchella Kock
+12460796
+Description: This is the page visualized mental health in united states
+sources:
+bootstrap navbar -- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+Linked view assignment: https://github.com/rushkock/dataprocessing/blob/master/homework/week_6/usmap.html
+UVA logo -- http://www.uva.nl/en/home
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Suicide rate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="../static/css/suicides/visualizations.css">
+        <link rel="stylesheet" href="../static/css/suicides/us.css">
+        <link rel="shortcut icon" href="../static/images/favicon.ico">
+
+        <!-- D3 links -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="../static/js/suicides/topojson.js"></script>
+
+        <!-- JS script for charts -->
+        <script src="../static/js/suicides/main.js"></script>
+        <script src="../static/js/suicides/usmap.js"></script>
+    </head>
+    <body>
+      <!-- Bootstrap Nav-bar -->
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Suicide Rate</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/home_suicides">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/home_suicides#cards">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/suicides">Visualizations</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/us">US mental Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sources">Info</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Div for the first map of the united states -->
+      <div class="USmap"></div>
+
+      <!-- Box next to map -->
+      <div class="boxMap">
+        <h1> Suicidal thoughts <br> in the United States </h1>
+        <p> This data shows the percentage of adults (ages 18 and older) who
+            thought about commiting suicide in the past year.
+            The respondents were given a questionare. They were asked,
+            "At any time in the past 12 months, did you seriously think about
+            trying to kill yourself?" Those who answered yes are shown in this
+            data set. The data was collected between 2012 -2014. </p>
+        <div class="subBoxMap">
+          <div class="subBoxMapCountry">
+            <h1></h1>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Suicidal thoughts: </div>
+            <div class="subBoxMapSuicidesPercentage val"></div>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Lower Confidence Interval: </div>
+            <div class="subBoxMapLower val"></div>
+          </div>
+          <br>
+          <div class="countryStatistics">
+            <div class="label"> Upper Confidence Interval: </div>
+            <div class="subBoxMapUpper val"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Div for the second map of the united states -->
+      <div class="USmap2"></div>
+
+      <!-- Box near second world map -->
+      <div class="boxMap2">
+        <h1> Major Depressive Episode<br> in the United States </h1>
+        <p> This data shows the percentage of adults (ages 18 and older),
+          who had a major depressive episode. In this data major depressive
+          episode was classified based on the criterias of
+          the Diagnostic and Statistical Manual of Mental
+          Disorders—Fourth Edition(DSM-IV).
+          The data was collected between 2012 -2014.
+          The confidence interval is also shown, this is a percentage that
+          says something about how confident we can be that the observed value
+          is correct over the population of each state. </p>
+        <div class="subBoxMap2">
+          <div class="subBoxMapCountry2">
+            <h1></h1>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Suicidal thoughts: </div>
+            <div class="subBoxMapSuicidesPercentage2 val"></div>
+          </div>
+          <div class="countryStatistics">
+            <div class="label"> Lower Confidence Interval: </div>
+            <div class="subBoxMapLower2 val"></div>
+          </div>
+          <br>
+          <div class="countryStatistics">
+            <div class="label"> Upper Confidence Interval: </div>
+            <div class="subBoxMapUpper2 val"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="page-footer font-small unique-color-dark">
+        <div class="footer-copyright text-center py-3">University of Amsterdam
+          <img class="uva" src="../static/images/uva.jpg" alt="University of amsterdam Logo">
+          <a href="http://www.mprog.nl/">Minor programmeren</a>
+        </div>
+      </footer>
+    </body>
+</html>

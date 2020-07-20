@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="44.492542mm"
+   height="25.036655mm"
+   viewBox="0 0 44.492543 25.036656"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="ruchella_logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="101.46684"
+     inkscape:cy="-30.117414"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-234.33515,-71.911472)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.01282406px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000080;fill-opacity:1;stroke:none;stroke-width:0.25032058"
+       x="238.05847"
+       y="89.94313"
+       id="text864"
+       transform="scale(0.98078766,1.0195887)"><tspan
+         sodipodi:role="line"
+         x="238.05847"
+         y="89.94313"
+         id="tspan862"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000080;stroke-width:0.25032058"><tspan
+           x="238.05847"
+           y="89.94313"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.35043335px;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;fill:#000080;stroke-width:0.25032058"
+           id="tspan860">ruchella</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.77272606px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.21931815"
+       x="276.02173"
+       y="71.429939"
+       id="text839"
+       transform="scale(0.89879068,1.1126061)"><tspan
+         sodipodi:role="line"
+         x="276.02173"
+         y="71.429939"
+         id="tspan837"
+         style="stroke-width:0.21931815"><tspan
+           x="276.02173"
+           y="71.429939"
+           style="font-size:11.69696808px;line-height:0.25;fill:#ffcc00;stroke-width:0.21931815"
+           id="tspan835">&gt;</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.27771187px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25694278"
+       x="305.59335"
+       y="63.916168"
+       id="text894"
+       transform="scale(0.84058513,1.1896475)"><tspan
+         sodipodi:role="line"
+         x="305.59335"
+         y="63.916168"
+         id="tspan892"
+         style="stroke-width:0.25694278"><tspan
+           x="305.59335"
+           y="63.916168"
+           style="font-size:13.70361423px;fill:#ffcc00;stroke-width:0.25694278"
+           id="tspan890">_</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.73764062px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06844101"
+       x="236.75967"
+       y="96.365967"
+       id="text845"
+       transform="scale(1.0131015,0.98706792)"><tspan
+         sodipodi:role="line"
+         x="236.75967"
+         y="96.365967"
+         id="tspan843"
+         style="stroke-width:0.06844101"><tspan
+           x="236.75967"
+           y="96.365967"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif';letter-spacing:0.36489394px;fill:#ffcc00;stroke-width:0.06844101"
+           id="tspan841">0x64 0x61 0x74 0x61</tspan></tspan></text>
+  </g>
+</svg>
